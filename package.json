@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "npx prisma migrate reset -f && next build",
+  "build": "npx prisma migrate reset -f --skip-seed && next build",
     "start": "next start",
     "lint": "next lint",
     "db:seed": "prisma db seed"
